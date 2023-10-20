@@ -11,12 +11,10 @@ ExternalApiHandler = ExternalApiHandler()
 
 @app.get("/home")
 async def get_home():
-    print("home")
     return "HI"
 
 @app.post("/swe_sentiment/", response_model=SvSentimentResponse)
 async def get_sv_sentiment(request_data: Request):
-    print("get_sv_sentiment")
     result = await ExternalApiHandler.get_sv_sentiment(request_data)
     return result
 
@@ -27,7 +25,7 @@ def main():
     HOST = config.get("HOST")
     PORT = config.get("PORT")
     f.close()
-    print(f"Hosting: {HOST}:{PORT}")
+
     uvicorn.run(app, host=HOST, port=PORT)
 
 

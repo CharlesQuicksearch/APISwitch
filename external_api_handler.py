@@ -20,7 +20,6 @@ class ExternalApiHandler:
                 api = self.APIS.get("SV_SENTIMENT")
                 url = "http://"+self.BASE_URL + api.get("PORT") + api.get("ENDPOINT")
 
-                print(f"{self.BASE_URL + api.get('PORT') + api.get('ENDPOINT')}")
                 async with session.post(
                     url,
                     json={"input": request_data.input},
