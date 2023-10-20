@@ -1,0 +1,21 @@
+{
+  "HEADERS": {"Content-Type":"application/json"},
+  "BASE_URL": "127.0.0.1",
+  "APIS": {
+    "SV_SENTIMENT":{ "PORT":":8004",
+      "ENDPOINT": "/swe_sentiment/"
+    },
+    "EN_SENTIMENT":{ "PORT":":8002",
+      "ENDPOINT": "/EN_SENTIMENT"
+    },
+    "TOPIC":{ "PORT":":8003",
+      "ENDPOINT": "/TOPIC"
+    },
+    "TRANSLATION":{ "PORT":":8004",
+      "ENDPOINT": "/TRANSLATION"
+    },
+    "SUMMARIZE":{ "PORT":":8005",
+      "ENDPOINT": "/SUMMARIZE"
+    }
+  }
+}
