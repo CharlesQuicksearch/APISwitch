@@ -1,21 +1,24 @@
 {
   "HEADERS": {"Content-Type":"application/json"},
-  "BASE_URL": "127.0.0.1",
+  "BASE_URL": "http://127.0.0.1",
   "APIS": {
     "SV_SENTIMENT":{ "PORT":":8004",
       "ENDPOINT": "/swe_sentiment/"
     },
-    "EN_SENTIMENT":{ "PORT":":8002",
-      "ENDPOINT": "/EN_SENTIMENT"
+    "EN_SENTIMENT":{ "PORT":":8003",
+      "ENDPOINT": "/eng_sentiment"
     },
-    "TOPIC":{ "PORT":":8003",
-      "ENDPOINT": "/TOPIC"
+    "TOPIC":{ "PORT":":8002",
+      "ENDPOINT": "/categorize/healthcare"
     },
-    "TRANSLATION":{ "PORT":":8004",
-      "ENDPOINT": "/TRANSLATION"
+    "TRANSLATION":{ "PORT":":8006",
+      "ENDPOINT": "/translate/"
     },
     "SUMMARIZE":{ "PORT":":8005",
-      "ENDPOINT": "/SUMMARIZE"
+      "ENDPOINT": "/summarize/"
+    },
+    "DETECT_LANGUAGE":{ "PORT":":8001",
+      "ENDPOINT": "/DETECT_LANGUAGE/"
     }
   }
 }
